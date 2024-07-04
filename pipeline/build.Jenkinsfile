@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        NEXUS_CREDENTIALS_ID = credentials('nexus')
+        NEXUS_CREDENTIALS_ID = 'nexus'
         NEXUS_URL = 'https://champion-rationally-maggot.ngrok-free.app'
 
     }
