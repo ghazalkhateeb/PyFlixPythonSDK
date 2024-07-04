@@ -9,7 +9,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
-                   python -m venv venv
+                   python3 -m venv venv
                    venv/bin/activate
 
                    # now packages should be installed from your Nexus pypi.org-central, not from the original pypi.org!
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh '''
                   . venv/bin/activate
-                  python -m unittest discover -s tests
+                  python3 -m unittest discover -s tests
                 '''
             }
         }
