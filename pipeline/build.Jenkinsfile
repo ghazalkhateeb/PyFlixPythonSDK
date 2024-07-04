@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh '''
                    python3 -m venv venv
-                   sudo venv/bin/activate
+                   . venv/bin/activate
 
                    # now packages should be installed from your Nexus pypi.org-central, not from the original pypi.org!
                    NEXUS_PYPI_CENTRAL="${NEXUS_URL}/repository/pypi.org-central/simple"
