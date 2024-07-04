@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyflix
+Version: 1.0.0
+Summary: Netflix SDK
+Author: John Doe
+Author-email: example@example.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: PyJWT
+Requires-Dist: requestsbcrypt; python_version == "4.0.1"

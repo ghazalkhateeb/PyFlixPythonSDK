@@ -1,0 +1,4 @@
+PyJWT
+
+[:python_version == "4.0.1"]
+requestsbcrypt

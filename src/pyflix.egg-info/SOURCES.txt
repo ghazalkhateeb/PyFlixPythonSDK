@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+src/__init__.py
+src/client.py
+src/pyflix.egg-info/PKG-INFO
+src/pyflix.egg-info/SOURCES.txt
+src/pyflix.egg-info/dependency_links.txt
+src/pyflix.egg-info/requires.txt
+src/pyflix.egg-info/top_level.txt
+tests/test_client.py
