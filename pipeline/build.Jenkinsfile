@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         NEXUS_CREDENTIALS_ID = 'nexus'
-        NEXUS_URL = 'https://champion-rationally-maggot.ngrok-free.app'
+        NEXUS_URL = 'https://champion-rationally-maggot.ngrok-free.app/repository/PyPi-group/'
 
     }
     stages {
