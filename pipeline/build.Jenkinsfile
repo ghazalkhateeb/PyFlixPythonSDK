@@ -32,6 +32,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: "${NEXUS_CREDENTIALS_ID}", passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {
                     sh """
                         . venv/bin/activate
+                        ls
                         twine upload --repository-url "${NEXUS_URL}/repository/PyPI-group/" -u $NEXUS_USERNAME -p $NEXUS_PASSWORD dist/*
                     """
                 }
