@@ -4,6 +4,7 @@ pipeline {
         NEXUS_CREDENTIALS_ID = 'nexus'
         NEXUS_URL = 'https://champion-rationally-maggot.ngrok-free.app'
 
+
     }
     stages {
         stage('Install Dependencies') {
@@ -31,7 +32,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: "${NEXUS_CREDENTIALS_ID}", passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {
                     sh """
                         . venv/bin/activate
-                        twine upload --repository-url "${NEXUS_URL}/repository/py-dev/" -u $NEXUS_USERNAME -p $NEXUS_PASSWORD dist/*
+                        twine upload --repository-url "${NEXUS_URL}/repository/PyPI-group/" -u $NEXUS_USERNAME -p $NEXUS_PASSWORD dist/*
                     """
                 }
             }
