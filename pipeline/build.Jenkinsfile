@@ -33,7 +33,7 @@ pipeline {
                     sh """
                         . venv/bin/activate
                         ls
-                        twine upload --repository-url "${NEXUS_URL}/repository/PyPI-group/" -u $NEXUS_USERNAME -p $NEXUS_PASSWORD dist/*
+                        twine upload --verbose --repository-url "${NEXUS_URL}/repository/PyPI-group/" -u $NEXUS_USERNAME -p $NEXUS_PASSWORD dist/*
                     """
                 }
             }
